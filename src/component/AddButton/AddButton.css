@@ -1,0 +1,26 @@
+.icon-button {
+    background-color: #28a745; /* Cor de fundo verde */
+    border: none; /* Remove a borda padrão */
+    border-radius: 50%; /* Torna o botão circular */
+    width: 50px; /* Largura do botão */
+    height: 50px; /* Altura do botão */
+    display: flex; /* Usa flexbox para centralizar conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    color: white; /* Cor do ícone */
+    cursor: pointer; /* Mostra cursor de ponteiro ao passar por cima */
+    transition: background-color 0.3s; /* Efeito de transição ao passar o mouse */
+    position: fixed; /* Posiciona o botão de forma fixa na tela */
+    bottom: 20px; /* Distância do botão em relação ao fundo da tela */
+    right: 20px; /* Distância do botão em relação à direita da tela */
+    z-index: 1000; /* Garante que o botão esteja sempre acima de outros elementos */
+}
+
+.icon-button:hover {
+    background-color: #218838; /* Cor ao passar o mouse */
+}
+
+.icon-button svg {
+    width: 24px; /* Define o tamanho do ícone */
+    height: 24px; /* Define o tamanho do ícone */
+}
