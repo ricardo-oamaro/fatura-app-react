@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "data": "2023-09-01",
+        "descricao": "Compra de supermercado",
+        "valor": 245.50,
+        "categoria": "Alimentação"
+    },
+    {
+        "id": 2,
+        "data": "2023-09-03",
+        "descricao": "Conta de energia elétrica",
+        "valor": 98.75,
+        "categoria": "Utilidades"
+    },
+    {
+        "id": 3,
+        "data": "2023-09-05",
+        "descricao": "Serviço de internet",
+        "valor": 120.00,
+        "categoria": "Serviços"
+    },
+    {
+        "id": 4,
+        "data": "2023-09-06",
+        "descricao": "Compra de roupas",
+        "valor": 350.00,
+        "categoria": "Vestuário"
+    },
+    {
+        "id": 5,
+        "data": "2023-09-10",
+        "descricao": "Jantar em restaurante",
+        "valor": 100.25,
+        "categoria": "Alimentação"
+    },
+    {
+        "id": 6,
+        "data": "2023-09-12",
+        "descricao": "Medicamentos",
+        "valor": 45.60,
+        "categoria": "Saúde"
+    },
+    {
+        "id": 7,
+        "data": "2023-09-15",
+        "descricao": "Academia mensalidade",
+        "valor": 89.90,
+        "categoria": "Saúde"
+    },
+    {
+        "id": 8,
+        "data": "2023-09-18",
+        "descricao": "Cinema",
+        "valor": 36.00,
+        "categoria": "Entretenimento"
+    },
+    {
+        "id": 9,
+        "data": "2023-09-20",
+        "descricao": "Gasolina",
+        "valor": 150.30,
+        "categoria": "Transporte"
+    },
+    {
+        "id": 10,
+        "data": "2023-09-25",
+        "descricao": "Assinatura de streaming",
+        "valor": 29.90,
+        "categoria": "Entretenimento"
+    }
+]

@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+
+}
+
+table {
+    max-width: 80%;
+    border-collapse: collapse;
+    width: 100%; /* Faz a tabela ocupar a largura total */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra para dar a sensação de flutuação */
+    border-radius: 8px; /* Bordas arredondadas */
+    overflow: hidden; /* Garante que os cantos arredondados sejam respeitados */
+    background-color: white; /* Fundo da tabela */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Borda leve nas células */
+    padding: 12px; /* Espaçamento interno nas células */
+    text-align: center; /* Centraliza o texto nas células */
+}
+
+th {
+    background-color: #f2f2f2; /* Cor de fundo para o cabeçalho */
+    font-weight: bold; /* Negrito para o cabeçalho */
+}
+
+tbody tr:hover {
+    background-color: #f9f9f9; /* Cor de fundo ao passar o mouse por cima da linha */
+}
