@@ -35,7 +35,7 @@ const SimpleTable = () => {
         useTable({ columns, data });
 
     return (
-        <div className="App">
+        <section className="App">
             <div className="container">
                 <table {...getTableProps()}>
                     <thead>
@@ -63,7 +63,7 @@ const SimpleTable = () => {
                     </tbody>
                 </table>
             </div>
-        </div>
+        </section>
     );
 };
 

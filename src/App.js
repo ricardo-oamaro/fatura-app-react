@@ -1,5 +1,6 @@
 
 import AddButton from './component/AddButton';
+import Form from './component/Form';
 import SimpleTable from './component/Table';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
 
   return (
     <div>
+      <Form />
       <SimpleTable />
       <AddButton onClick={handleButtonClick}/>
     </div>
