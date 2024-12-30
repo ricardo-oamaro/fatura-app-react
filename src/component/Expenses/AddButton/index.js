@@ -1,7 +1,7 @@
 import React from 'react';
 import './AddButton.css'; // Importa o estilo do botão
 
-const AddButton = ({ onClick }) => {
+const AddNewExpenseButton = ({ onClick }) => {
     return (
         <button className="icon-button" onClick={onClick}>
             <svg
@@ -22,4 +22,4 @@ const AddButton = ({ onClick }) => {
     );
 };
 
-export default AddButton;
+export default AddNewExpenseButton;

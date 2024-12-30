@@ -5,7 +5,7 @@ import ComboBox from "../ComboBox";
 import Button from "../Button";
 
 
-const Form = () => {
+const Form = (props) => {
     const [date, setDate] = useState('');
     const [description, setDescription] = useState('');
     const [amount, setAmount] = useState('');
@@ -13,10 +13,15 @@ const Form = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log('Form submitted');
+        props.newExpense({
+            date,
+            description,
+            amount,
+            category
+        });
     }
 
-    const itens = ['Alimentação', 'Educação', 'Lazer', 'Saúde', 'Transporte', 'Moradia'];
+    // TODO: alterar as propriedades para receber os atributos em ingles
 
     return (
         <section className="formulario">
@@ -40,7 +45,7 @@ const Form = () => {
                 />
                 <ComboBox
                     label="Categoria"
-                    itens={itens}
+                    itens={props.itens}
                     value={category}
                     aoAlterado={v => setCategory(v)}
                 />
