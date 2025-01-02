@@ -18,7 +18,7 @@ table {
 }
 
 th, td {
-    border: 1px solid #ddd; /* Borda leve nas células */
+    /* border: 1px solid #fff; Borda leve nas células */
     padding: 12px; /* Espaçamento interno nas células */
     text-align: center; /* Centraliza o texto nas células */
 }

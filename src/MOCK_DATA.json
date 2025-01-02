@@ -1,72 +1,72 @@
 [
     {
         "id": 1,
-        "data": "2023-09-01",
-        "descricao": "Compra de supermercado",
-        "valor": 245.50,
-        "categoria": "Alimentação"
+        "date": "2023-09-01",
+        "description": "Compra de supermercado",
+        "amount": 245.50,
+        "category": "Alimentação"
     },
     {
         "id": 2,
-        "data": "2023-09-03",
-        "descricao": "Conta de energia elétrica",
-        "valor": 98.75,
-        "categoria": "Utilidades"
+        "date": "2023-09-03",
+        "description": "Conta de energia elétrica",
+        "amount": 98.75,
+        "category": "Utilidades"
     },
     {
         "id": 3,
-        "data": "2023-09-05",
-        "descricao": "Serviço de internet",
-        "valor": 120.00,
-        "categoria": "Serviços"
+        "date": "2023-09-05",
+        "description": "Serviço de internet",
+        "amount": 120.00,
+        "category": "Serviços"
     },
     {
         "id": 4,
-        "data": "2023-09-06",
-        "descricao": "Compra de roupas",
-        "valor": 350.00,
-        "categoria": "Vestuário"
+        "date": "2023-09-06",
+        "description": "Compra de roupas",
+        "amount": 350.00,
+        "category": "Vestuário"
     },
     {
         "id": 5,
-        "data": "2023-09-10",
-        "descricao": "Jantar em restaurante",
-        "valor": 100.25,
-        "categoria": "Alimentação"
+        "date": "2023-09-10",
+        "description": "Jantar em restaurante",
+        "amount": 100.25,
+        "category": "Alimentação"
     },
     {
         "id": 6,
-        "data": "2023-09-12",
-        "descricao": "Medicamentos",
-        "valor": 45.60,
-        "categoria": "Saúde"
+        "date": "2023-09-12",
+        "description": "Medicamentos",
+        "amount": 45.60,
+        "category": "Saúde"
     },
     {
         "id": 7,
-        "data": "2023-09-15",
-        "descricao": "Academia mensalidade",
-        "valor": 89.90,
-        "categoria": "Saúde"
+        "date": "2023-09-15",
+        "description": "Academia mensalidade",
+        "amount": 89.90,
+        "category": "Saúde"
     },
     {
         "id": 8,
-        "data": "2023-09-18",
-        "descricao": "Cinema",
-        "valor": 36.00,
-        "categoria": "Entretenimento"
+        "date": "2023-09-18",
+        "description": "Cinema",
+        "amount": 36.00,
+        "category": "Entretenimento"
     },
     {
         "id": 9,
-        "data": "2023-09-20",
-        "descricao": "Gasolina",
-        "valor": 150.30,
-        "categoria": "Transporte"
+        "date": "2023-09-20",
+        "description": "Gasolina",
+        "amount": 150.30,
+        "category": "Transporte"
     },
     {
         "id": 10,
-        "data": "2023-09-25",
-        "descricao": "Assinatura de streaming",
-        "valor": 29.90,
-        "categoria": "Entretenimento"
+        "date": "2023-09-25",
+        "description": "Assinatura de streaming",
+        "amount": 29.90,
+        "category": "Entretenimento"
     }
 ]

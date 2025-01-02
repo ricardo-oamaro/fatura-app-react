@@ -15,19 +15,19 @@ function App() {
     },
     {
       Header: "Data",
-      accessor: "data",
+      accessor: "date",
     },
     {
       Header: "Descrição",
-      accessor: "descricao",
+      accessor: "description",
     },
     {
       Header: "Valor",
-      accessor: "valor",
+      accessor: "amount",
     },
     {
       Header: "Categoria",
-      accessor: "categoria",
+      accessor: "category",
     }
   ]
 
