@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.deleteIcon {
+  color: red;
+}
+
+.editIcon {
+  color: rgb(2, 2, 164);
+  padding: 0px 20px;
+}

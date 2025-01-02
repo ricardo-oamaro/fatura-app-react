@@ -1,55 +1,28 @@
 
-import { useState, useEffect } from 'react';
-import AddNewExpenseButton from './component/Expenses/AddButton';
-import Form from './component/Form';
-import SimpleTable from './component/Table';
-import fakeData from './MOCK_DATA.json';
+import { useState} from 'react';
+import AddNewExpenseButton from './components/Expenses/AddButton';
+import Form from './components/Form';
+import SimpleTable from './components/Table';
+import { itens } from './constants/Categories';
+import { useExpenses } from './hooks/useExpenses';
+import { useEditExpense } from './hooks/useEditExpense';
+import { columns } from './constants/Columns';
 
 function App() {
 
-  const itens = ['Alimentação', 'Educação', 'Lazer', 'Saúde', 'Transporte', 'Moradia'];
-  const columns = [
-    {
-      Header: "ID",
-      accessor: "id",
-    },
-    {
-      Header: "Data",
-      accessor: "date",
-    },
-    {
-      Header: "Descrição",
-      accessor: "description",
-    },
-    {
-      Header: "Valor",
-      accessor: "amount",
-    },
-    {
-      Header: "Categoria",
-      accessor: "category",
-    }
-  ]
+  const {
+    expenses,
+    newExpense,
+    deleteExpense,
+    updateExpense,
+  } = useExpenses();
 
-  const [expenses, setExpenses] = useState([]);
+  const [editingId, setEditingId] = useState(null);
+  const [formData, setFormData] = useState({ date: '', description: '', amount: '', category: '' });
+  const { startEditing, cancelEditing } = useEditExpense(setEditingId, setFormData);
 
-  const newExpense = (expense) => {
-    const nextId = expenses.length > 0 ? Math.max(...expenses.map(e => Number(e.id) || 0)) + 1 : 1; // Se não houver despesas, começamos com 1
-    const updatedExpense = {
-          id: nextId, 
-            ...expense
-        };
-    console.log('Despesa a ser adicionada:', updatedExpense);
-    
-    setExpenses([...expenses, { ...expense, id: nextId }]);
-    console.log('Dados adicionados:', [...expenses, expense]);
-  }
+  const columnsWithActions = columns(startEditing, deleteExpense);
 
-  useEffect(() => {
-    if (Array.isArray(fakeData)) {
-      setExpenses(fakeData);
-    }
-  }, []);
 
   const handleButtonClick = () => {
     alert('Botão clicado!');
@@ -57,11 +30,20 @@ function App() {
 
   return (
     <div>
-      <Form itens={itens.map(item => item)} newExpense={expense => newExpense(expense)} />
-      <SimpleTable columns={columns} data={expenses} />
+      <Form
+        itens={itens.map(item => item)}
+        newExpense={newExpense}
+        updateExpense={updateExpense}
+        formData={formData}
+        setFormData={setFormData}
+        editingId={editingId}
+        cancelEditing={cancelEditing}
+      />
+      <SimpleTable columns={columnsWithActions} data={expenses} />
       <AddNewExpenseButton onClick={handleButtonClick} />
     </div>
   );
 }
+
 
 export default App;

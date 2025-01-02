@@ -1,0 +1,1 @@
+export const itens = ['Alimentação', 'Educação', 'Lazer', 'Saúde', 'Transporte', 'Moradia'];
