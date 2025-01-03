@@ -11,3 +11,12 @@
     padding: 12px 64px;
     box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.08);
 }
+
+.date-picker {
+    width: 100%; /* Largura total */
+    padding: 10px; /* Espaçamento interno */
+    margin: 10px 0; /* Margens em cima e embaixo */
+    border: 1px solid #ccc; /* Borda padrão */
+    border-radius: 4px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+}

@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import TextField from "../TextField";
-import './Form.css';
 import ComboBox from "../ComboBox";
 import Button from "../Button";
+import './Form.css';
+
 
 
 const Form = ({ editingId, formData, updateExpense, newExpense, cancelEditing, itens }) => {
@@ -54,18 +55,18 @@ const Form = ({ editingId, formData, updateExpense, newExpense, cancelEditing, i
         }
     }, [editingId, formData]);
 
-    // TODO: alterar as propriedades para receber os atributos em ingles
-
     return (
         <section className="formulario">
 
             <form onSubmit={handleSubmit}>
                 <h2>Cadastre nova despesa</h2>
+
                 <TextField
-                    tipe="date"
+                    type="date"
                     label="Data"
                     value={date}
                     onTyped={v => setDate(v)}
+                    isDatePicker
                 />
                 <TextField
                     label="Descrição"
