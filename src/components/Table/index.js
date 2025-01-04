@@ -44,7 +44,7 @@ const SimpleTable = ({ columns, data }) => {
                                         return (
                                             <td {...cell.getCellProps()} key={cell.id}>
                                                 {cell.column.id === 'date' ? 
-                                                    formatDate(cell.value) : // Formata a data
+                                                    cell.value : // Formata a data
                                                     cell.render("Cell")} {/* Renderiza normalmente para outras células */}
                                                     
                                             </td>
