@@ -1,13 +1,13 @@
-export const useEditExpense = (setEditingId, setFormData) => {
+export const useEditExpense = (setEditingId, setFormData, closeModal) => {
     const startEditing = (expense) => {
         setEditingId(expense.id);
         setFormData(expense);
       }
     
       const cancelEditing = () => {
-        debugger;
         setEditingId(null);
         setFormData({ date: '', description: '', amount: '', category: '' });
+        closeModal();
       };
 
     return { startEditing, cancelEditing };

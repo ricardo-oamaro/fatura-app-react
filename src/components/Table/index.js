@@ -7,10 +7,10 @@ const SimpleTable = ({ columns, data }) => {
     const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
         useTable({ columns, data });
 
-    const formatDate = (dateString) => {
-        const [year, month, day] = dateString.split('-');
-        return `${day}/${month}/${year}`; 
-    }
+    // const formatDate = (dateString) => {
+    //     const [year, month, day] = dateString.split('-');
+    //     return `${day}/${month}/${year}`; 
+    // }
 
     return (
         <section className="App">
@@ -36,13 +36,14 @@ const SimpleTable = ({ columns, data }) => {
                     <tbody {...getTableBodyProps()}>
                         {rows.map((row) => {
                             prepareRow(row);
-                            // const { key, ...restRowProps } = row.getRowProps();
+                            const rowProps = row.getRowProps();
                             return (
-                                <tr {...row.getRowProps()}>
+                                <tr {...rowProps} key={rowProps.key}>
                                 {row.cells.map(cell => {
                                     // debugger;
+                                    const cellProps = cell.getCellProps();
                                         return (
-                                            <td {...cell.getCellProps()} key={cell.id}>
+                                            <td {...cellProps} key={cellProps.key}>
                                                 {cell.column.id === 'date' ? 
                                                     cell.value : // Formata a data
                                                     cell.render("Cell")} {/* Renderiza normalmente para outras células */}

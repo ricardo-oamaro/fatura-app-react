@@ -15,11 +15,6 @@ const Form = ({ editingId, formData, updateExpense, newExpense, cancelEditing, i
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        // if(!formData.date || !formData.description || !formData.amount || !formData.category) {
-        //     alert('Preencha todos os campos');
-        //     return;
-        // }
-
         const expenseData = {
             date,
             description,

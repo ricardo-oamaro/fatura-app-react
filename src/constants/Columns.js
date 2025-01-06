@@ -1,7 +1,7 @@
 
 import { MdEdit, MdDelete } from 'react-icons/md'; // Supondo que você usa react-icons ou bibliotecas similares
 
-export const columns = (startEditing, deleteExpense) => [
+export const columns = (startEditing, deleteExpense, openModal) => [
     {
         Header: "ID",
         accessor: "id",
@@ -27,7 +27,7 @@ export const columns = (startEditing, deleteExpense) => [
         accessor: "actions",
         Cell: ({ row }) => (
             <>
-                <MdEdit className='editIcon' onClick={() => startEditing(row.original)} />
+                <MdEdit className='editIcon' onClick={() => {startEditing(row.original); openModal();}} />
                 <MdDelete className='deleteIcon' onClick={() => deleteExpense(row.original.id)} />
             </>
         ),

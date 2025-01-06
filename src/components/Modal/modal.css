@@ -1,0 +1,28 @@
+.modal-overlay {
+    position: fixed; /* Fica fixo na tela */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Fica acima de outros elementos */
+}
+
+.modal-content {
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    width: 80%; /* Largura fixa do modal */
+}
+
+.close-button {
+    background-color: transparent; /* Fundo transparente para o botão */
+    border: none; /* Remove a borda */
+    font-size: 20px; /* Tamanho do botão */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+    position: absolute; /* Coloca o botão no canto superior direito */
+    top: 10px; /* Distância do topo */
+    right: 10px; /* Distância da direita */
+}
