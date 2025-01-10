@@ -1,0 +1,27 @@
+.header {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #f8f9fa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-name {
+    margin-right: 10px; /* Espaço entre o texto e a imagem */
+    font-size: 16px; /* Tamanho da fonte do nome */
+}
+
+.user-avatar {
+    width: 40px; /* Largura da imagem */
+    height: 40px; /* Altura da imagem */
+    border-radius: 50%; /* Torna a imagem circular */
+    object-fit: cover; /* Garante que a imagem mantenha a proporção indo para o círculo */
+}

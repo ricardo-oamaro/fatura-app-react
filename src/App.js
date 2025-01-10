@@ -9,10 +9,12 @@ import { useEditExpense } from './hooks/useEditExpense';
 import { columns } from './constants/Columns';
 import Modal from './components/Modal';
 import { useModal } from './hooks/useModal.js';
+import Header from './components/Header/index.js';
+import SideBar from './components/Menu/Sidebar/index.js';
 
 function App() {
 
-  
+
   const [editingId, setEditingId] = useState(null);
   const [formData, setFormData] = useState({ date: '', description: '', amount: '', category: '' });
   const { isModalOpen, openModal, closeModal } = useModal();
@@ -23,24 +25,28 @@ function App() {
     deleteExpense,
     updateExpense,
   } = useExpenses(closeModal);
-  
+
   const columnsWithActions = columns(startEditing, deleteExpense, openModal);
 
   return (
     <div>
-      <Modal isOpen={isModalOpen} onClose={closeModal}>
-        <Form
-          itens={itens.map(item => item)}
-          newExpense={newExpense}
-          updateExpense={updateExpense}
-          formData={formData}
-          setFormData={setFormData}
-          editingId={editingId}
-          cancelEditing={cancelEditing}
-        />
-      </Modal>
-      <SimpleTable columns={columnsWithActions} data={expenses} />
-      <AddNewExpenseButton onClick={openModal} />
+      <Header />
+      <SideBar />
+      <div>
+        <Modal isOpen={isModalOpen} onClose={closeModal}>
+          <Form
+            itens={itens.map(item => item)}
+            newExpense={newExpense}
+            updateExpense={updateExpense}
+            formData={formData}
+            setFormData={setFormData}
+            editingId={editingId}
+            cancelEditing={cancelEditing}
+          />
+        </Modal>
+        <SimpleTable columns={columnsWithActions} data={expenses} />
+        <AddNewExpenseButton onClick={openModal} />
+      </div>
     </div>
   );
 }

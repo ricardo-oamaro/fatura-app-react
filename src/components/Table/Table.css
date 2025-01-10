@@ -15,6 +15,7 @@ table {
     border-radius: 8px; /* Bordas arredondadas */
     overflow: hidden; /* Garante que os cantos arredondados sejam respeitados */
     background-color: white; /* Fundo da tabela */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 th, td {
