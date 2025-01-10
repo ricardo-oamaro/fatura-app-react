@@ -11,8 +11,8 @@ const SideBar = () => {
     };
 
     const sidebarItems = [
-        { icon: AiOutlineHome, label: 'Home' },
-        { icon: AiOutlineHome, label: 'Despesas' },
+        { icon: AiOutlineHome, label: 'Home', to: '/' },
+        { icon: AiOutlineHome, label: 'Despesas', to: '/expenses' },
     ];
 
     return (
@@ -26,6 +26,7 @@ const SideBar = () => {
                         key={index} 
                         icon={item.icon} 
                         label={isCollapsed ? '' : item.label} 
+                        to={item.to}
                         />
                     ))}
                 </ul>
