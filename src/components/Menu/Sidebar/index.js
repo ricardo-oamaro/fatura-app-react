@@ -13,6 +13,7 @@ const SideBar = () => {
     const sidebarItems = [
         { icon: AiOutlineHome, label: 'Home', to: '/' },
         { icon: AiOutlineHome, label: 'Despesas', to: '/expenses' },
+        { icon: AiOutlineHome, label: 'Cartão de Crédito', to: '/credit-card' },
     ];
 
     return (
