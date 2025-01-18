@@ -101,8 +101,8 @@ button:hover {
 
 .delete-btn {
   position: absolute;
-  bottom: 10px;
-  left: 50%;
+  bottom: 0px;
+  left: 12%;
   transform: translateX(-50%);
   background: none;
   border: none;
@@ -127,3 +127,42 @@ button:hover {
   margin-bottom: 20px;
   border-radius: 8px;
 }
+
+.card-info {
+  display: flex;
+  flex-direction: column; /* Organiza os itens de forma vertical */
+  justify-content: flex-start; /* Garante que o conteúdo comece do topo */
+  align-items: center; /* Centraliza os itens horizontalmente */
+  padding-top: 10px; /* Adiciona um espaçamento maior no topo */
+}
+
+.card-number {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 1.5em; /* Aumenta o tamanho do texto do número do cartão */
+  word-wrap: break-word;
+  text-align: center;
+  border: 2px solid #333; /* Adiciona um contorno ao redor do número */
+  border-radius: 8px; /* Borda arredondada para um visual mais suave */
+  padding: 10px; /* Espaçamento interno */
+  margin-top: 10px; /* Espaço entre o logo e o número */
+  background-color: #f9f9f9; /* Fundo suave para dar contraste */
+  color: #333; /* Cor do texto */
+  font-weight: bold; /* Texto em negrito */
+}
+
+.card-logo {
+  margin-bottom: 10px; /* Espaço entre o logo e o número do cartão */
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 60px; /* Aumenta a altura do logo */
+}
+
+.card-logo svg {
+  width: 60px; /* Ajusta o tamanho do ícone */
+  height: auto;
+}
+
+
