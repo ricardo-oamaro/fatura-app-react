@@ -2,9 +2,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  margin-top: 40px;
-  position: relative;
+  /* height: 100vh; */
+  /* background-color: #f5f5f5; */
+  /* margin: 200px 0; */
 }
 
 .novo-cartao-btn {
@@ -12,16 +12,8 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 10%;
-  right: 20px;
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 8px;
-  cursor: pointer;
-  z-index: 10;
-  transition: background-color 0.3s;
+  top: 15%;
+  right: 30px;
 }
 
 .novo-cartao-btn:hover {
@@ -121,8 +113,8 @@ button:hover {
 }
 
 .square {
-  width: 100px;
-  height: 100px;
+  width: 400px;
+  height: 200px;
   border: 4px dashed #ccc;
   margin-bottom: 20px;
   border-radius: 8px;
