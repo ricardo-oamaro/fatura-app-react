@@ -1,34 +1,160 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* height: 100vh; */
-    /* background-color: #f5f5f5; */
-    /* margin: 200px 0; */
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* height: 100vh; */
+  /* background-color: #f5f5f5; */
+  /* margin: 200px 0; */
+}
 
-  .novo-cartao-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 15%;
-    right: 30px;
-  }
+.novo-cartao-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 15%;
+  right: 30px;
+}
 
-  .no-card {
-    display: flex; /* Alinha o ícone e o texto em linha */
-    flex-direction: column; /* Coloca o ícone sobre o texto */
-    align-items: center; /* Centraliza horizontalmente */
-    margin-top: 20px; /* Margem superior para espaçamento */
+.novo-cartao-btn:hover {
+  background-color: #45a049;
+}
+
+.input-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.input-card {
+  padding: 10px;
+  width: 250px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 12px 25px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite quebrar linha caso o espaço não seja suficiente */
+  gap: 20px; /* Espaçamento entre os cartões */
+  justify-content: center; /* Centraliza os cartões horizontalmente */
+  max-width: 960px; /* Limita a largura máxima do container */
+  margin: 0 auto; /* Centraliza o container na tela */
+}
+
+.card {
+  width: 300px;
+  height: 180px;
+  border: 2px solid #ccc;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #fff;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-info h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+  text-transform: capitalize;
+}
+
+.card-info p {
+  font-size: 14px;
+  word-wrap: break-word;
+  color: #666;
+}
+
+.delete-btn {
+  position: absolute;
+  bottom: 0px;
+  left: 12%;
+  transform: translateX(-50%);
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #ff4d4d;
+}
+
+.no-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  color: #777;
 }
 
 .square {
-    width: 600px; /* Largura do quadrado */
-    height: 300px; /* Altura do quadrado */
-    border: 4px dashed #ccc; /* Borda tracejada */
-    display: flex; /* Flex para centralizar */
-    align-items: center; /* Alinha verticalmente */
-    justify-content: center; /* Alinha horizontalmente */
-    margin-bottom: 10px; /* Espaçamento inferior */
+  width: 400px;
+  height: 200px;
+  border: 4px dashed #ccc;
+  margin-bottom: 20px;
+  border-radius: 8px;
 }
+
+.card-info {
+  display: flex;
+  flex-direction: column; /* Organiza os itens de forma vertical */
+  justify-content: flex-start; /* Garante que o conteúdo comece do topo */
+  align-items: center; /* Centraliza os itens horizontalmente */
+  padding-top: 10px; /* Adiciona um espaçamento maior no topo */
+}
+
+.card-number {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 1.5em; /* Aumenta o tamanho do texto do número do cartão */
+  word-wrap: break-word;
+  text-align: center;
+  border: 2px solid #333; /* Adiciona um contorno ao redor do número */
+  border-radius: 8px; /* Borda arredondada para um visual mais suave */
+  padding: 10px; /* Espaçamento interno */
+  margin-top: 10px; /* Espaço entre o logo e o número */
+  background-color: #f9f9f9; /* Fundo suave para dar contraste */
+  color: #333; /* Cor do texto */
+  font-weight: bold; /* Texto em negrito */
+}
+
+.card-logo {
+  margin-bottom: 10px; /* Espaço entre o logo e o número do cartão */
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 60px; /* Aumenta a altura do logo */
+}
+
+.card-logo svg {
+  width: 60px; /* Ajusta o tamanho do ícone */
+  height: auto;
+}
+
+
